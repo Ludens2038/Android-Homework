@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ex09-Lists</string>
+    <string name="austria_name">Österreich</string>
+    <string name="austria_acronym">AUT</string>
+    <string name="france_name">Frankreich</string>
+    <string name="france_acronym">FR</string>
+    <string name="germany_name">Deutschland</string>
+    <string name="germany_acronym">DE</string>
+    <string name="klickinfo">geklickt</string>
+</resources>

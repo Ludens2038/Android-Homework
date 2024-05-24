@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/activity_main_button_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button a" />
+
+        <Button
+            android:id="@+id/activity_main_button_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button b" />
+
+        <Button
+            android:id="@+id/activity_main_button_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button c" />
+
+        <Button
+            android:id="@+id/activity_main_button_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button d" />
+
+        <Button
+            android:id="@+id/activity_main_button_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button e" />
+
+        <Button
+            android:id="@+id/activity_main_button_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button f" />
+    </LinearLayout>
+</FrameLayout>

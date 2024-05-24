@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/activity_main_button_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button a" />
+
+            <Button
+                android:id="@+id/activity_main_button_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button b" />
+
+            <Button
+                android:id="@+id/activity_main_button_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/activity_main_button_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button d" />
+
+            <Button
+                android:id="@+id/activity_main_button_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button e" />
+
+            <Button
+                android:id="@+id/activity_main_button_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="myOnClick"
+                android:text="Button f" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_opt_a"
+        android:icon="@drawable/ic_option_a"
+        android:title="Option A"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_menu_opt_b"
+        android:icon="@drawable/ic_option_b"
+        android:title="Option B"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_menu_opt_c"
+        android:icon="@drawable/ic_option_c"
+        android:title="Option C"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/main_menu_opt_d"
+        android:icon="@drawable/ic_option_d"
+        android:title="Option D"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_menu_opt_e"
+        android:icon="@drawable/ic_option_e"
+        android:title="Option E"
+        app:showAsAction="never" />
+</menu>

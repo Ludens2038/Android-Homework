@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main_textview_light_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Light"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_light_lumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Lumen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_textview_light_header"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_textview_light_header" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_light_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_light_lumen"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="149dp" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_accel_xaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="x value"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_textview_light_lumen"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_textview_Accelaratometer" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_accel_xvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_accel_xaxis"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <Switch
+        android:id="@+id/activity_main_switch_lumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_light_value"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <Switch
+        android:id="@+id/activity_main_switch_accel_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_accel_xvalue"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_switch_lumen" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_Accelaratometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Accelaretometer"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_textview_light_header"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_textview_light_header" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_accel_yaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="y value"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_textview_accel_xaxis"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_textview_accel_xaxis" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_accel_yvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_accel_yaxis"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_zaxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="z value"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_textview_accel_yaxis"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_textview_accel_yaxis" />
+
+    <TextView
+        android:id="@+id/activity_main_textview_accel_zvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_zaxis"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <Switch
+        android:id="@+id/activity_main_switch_accel_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_accel_yvalue"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_switch_accel_x" />
+
+    <Switch
+        android:id="@+id/activity_main_switch_accel_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_textview_accel_zvalue"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_switch_accel_y" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
